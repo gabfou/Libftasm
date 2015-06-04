@@ -27,7 +27,8 @@ SRC = Part1/ft_bzero.s\
 	  Part2/ft_memcpy.s\
 	  Part2/ft_strdup.s\
 	  Bonus/ft_islower.s\
-	  Bonus/ft_isupper.s
+	  Bonus/ft_isupper.s\
+	  Part3/ft_cat.s
 OBJ = $(SRC:.s=.o)
 
 all: $(NAME)
