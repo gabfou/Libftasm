@@ -3,15 +3,12 @@ segment .text
 
 _ft_strlen:
 	push rdi
-	mov rcx, 0
-
-while1:
-	cmp byte [rdi + rcx], 0
-	jle endwhile
-	inc rcx
-	jmp while1
-
-endwhile:
+	mov rcx, 0x00
+	mov rax, 0x00
+	not rcx
+	repne scasb
+	not rcx
+	dec rcx
 	mov rax, rcx
 	pop rdi
 	ret
