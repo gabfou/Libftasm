@@ -136,7 +136,7 @@ printf("\033[31mPartie 2 : \n\n");
 	printf("Retour : %s\n\n", ft_memset((void *)str, '9', 3));
 
 	str = strdup("Chaine 1\0");
-	printf("\033[33mft_memcpy\033[0m\n");
+	printf("\033[32mft_memcpy\033[0m\n");
 	printf("ft_memcpy(%s, %s, 4):\n", str, "ooook");
 	printf("%s\n\n", (char*)ft_memcpy(str, "ooook", 4));
 
